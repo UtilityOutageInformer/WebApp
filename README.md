@@ -24,8 +24,5 @@ Installation
 
 * Open a browser and head for `http://localhost:3000`
 
-* Run `cordova build ios` to build the app.
-
-* Run `cordova emulate ios` to run the app on emulator.
 
 ThoughtWorks, Inc &copy; 2014
