@@ -3,9 +3,26 @@ extends layout
 block content
   .row
     .col-lg-12.col-md-12.well.inner
-      h2 Basic Information
-      h3 WHAT
-        h4 Getting outage info
-      h3 WHY
-      h3 HOW 
-    
+      h2.white.center.page-header Reports Electricity, Water, Transport Outages
+      h3.gradientText.center Recieve push notifications to stay updated about when service is interrupted or restored. 
+      h3.gradientText.center See current service interruptions affecting the surrounding areas.
+      div
+      h1.gradientText.center Would you be interested in subscribing to services?    
+      .form-box
+        .form-group.row.center
+          .col-lg-4.col-md-4
+          .col-lg-4.col-md-4.h3.white
+            .col-lg-4.col-md-4
+              input(type="radio", name="selectionCriteria", id="selection_criteria_1", value="NONE") 
+              label(for="selection_criteria_1") Yes
+            .col-lg-4.col-md-4
+              input(type="radio", name="selectionCriteria", id="selection_criteria_1", value="NONE")
+              label(for="selection_criteria_1") No
+          .col-lg-4.col-md-4
+        .form-group.row.center
+          .col-lg-4.col-md-4
+          .col-lg-4.col-md-4
+            input.form-control(type="text", name="email", id="email_id", placeholder="Email Address")
+          .col-lg-4.col-md-4
+
+          

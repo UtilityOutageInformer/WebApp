@@ -3,7 +3,7 @@
   padding: 152px 0 125px 0;
 }
 .logo{
-  font-family: "HelveticaNeueLTStd-HvCn";
+  /*font-family: "HelveticaNeueLTStd-HvCn";*/
   font-size: 36px;
   color: #7AC0A8;
   text-transform: uppercase;
@@ -16,9 +16,23 @@
   overflow: hidden;
 }
 .inner{
-  background-size: cover;
+  /*background-size: cover;*/
   width:97%;
-  margin-top: 130px;
+  margin-top: 10%;
   background: url('../images/inner.png');
-  border-radius: 5px;
+  border-radius: 7px;
+}
+.white{
+  color:#F6f6f6;
+}
+.center{
+  text-align: center;
+}
+.underline{
+  text-decoration: underline;
+}
+.gradientText{
+  background: -webkit-linear-gradient(#FFFFFF, #6FFFE2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
