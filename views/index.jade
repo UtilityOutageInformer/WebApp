@@ -28,22 +28,19 @@ block content
         h3 Here's how
     .row
       .col-lg-3
-        .step-container.first
-          .step-icon.step-1
-          .step-text
-            p The utility company announces an outage
-      .col-lg-1.step-container
+        .step-icon.step-1
+        .step-text
+          p The utility company announces an outage
+      .col-lg-1.step-arrows
       .col-lg-3
-        .step-container
-          .step-icon.step-2
-          .step-text
-            p Outage Informer gets the announcement and broadcasts it to the subscribers
-      .col-lg-1.step-container
+        .step-icon.step-2
+        .step-text
+          p Outage Informer gets the announcement and broadcasts it to the subscribers
+      .col-lg-1.step-arrows
       .col-lg-3
-        .step-container
-          .step-icon.step-3
-          .step-text
-            p The subscribers get notified about the outage well in advance
+        .step-icon.step-3
+        .step-text
+          p The subscribers get notified about the outage well in advance
 
   .info
     .row
@@ -57,11 +54,18 @@ block content
       .col-lg-6
         h3 Tell us what you think
         p As a consumer of utility services, would you be interested in subscribing to this service?
-        input(id="feedbackYes", type="radio", name="feedback")
-        label(for="feedbackYes") Oh yeah!
-        input(id="feedbackNo", type="radio", name="feedback")
-        label(for="feedbackNo") Nope, it's not for me.
-        input.btn.btn-primary(type="submit", value="SUBMIT")
+        .opinion-form
+          .row
+            .col-lg-12.col-md-12
+              input(id="feedbackYes", type="radio", name="feedback")
+              label(for="feedbackYes") Oh yeah!
+          .row
+            .col-lg-12.col-md-12
+              input(id="feedbackNo", type="radio", name="feedback")
+              label(for="feedbackNo") Nope, it's not for me.
+        .row
+          .col-lg-12.col-md-12
+            input.btn.btn-primary(type="submit", value="SUBMIT")
 
   .sign-up
     .row
@@ -71,4 +75,4 @@ block content
         p Let us know your email address and we'll inform you whenever we launch
         .subscribe-form
           input(type="text", name="", placeholder="abc@example.com")
-          input.btn.btn-primary(type="submit", value="NNTOFY ME")
+          input.btn.btn-primary(type="submit", value="NOTIFY ME")

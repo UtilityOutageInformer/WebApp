@@ -1,14 +1,32 @@
-h1, h2, h3, h4 {
-  font-weight: normal;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
 }
 
+h1, h2, h3, h4 {
+  font-weight: normal;
+
+}
+h3 {
+  font-size: 32px;
+}
+.btn {
+  border-radius: 0;
+}
 header {
   padding: 14px 0;
 }
+
+footer {
+  padding: 14px 0;
+}
+
 .logo {
   margin: 0;
 
 }
+
 .logo a {
   display: block;
   width: 139px;
@@ -16,14 +34,17 @@ header {
   background: url('../images/logo.png') no-repeat left top;
   text-indent: -999em;
 }
+
 header ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 header ul li {
   float: left;
 }
+
 header ul a {
   display: block;
   padding: 10px;
@@ -31,88 +52,151 @@ header ul a {
   font-weight: bold;
   color: #444;
 }
+
 header ul a:hover {
   text-decoration: none;
   color: black;
 }
+
 .banner {
   background: url('../images/banner.jpg') no-repeat left top;
   height: 330px;
 }
+
 .banner h2,
 .banner h3,
 .banner a {
   margin-left: 35px;
   color: #e1e1e1;
 }
+.banner a.btn {
+  text-transform: uppercase;
+  font-size: 17px;
+  padding: 10px 22px;
+}
+
 .banner h2 {
   margin-top: 70px;
+  font-size: 32px;
+  margin-bottom: 12px;
 }
+
 .banner h3 {
   margin-top: 0;
+  font-size: 24px;
 }
+
 .banner a {
   display: inline-block;
   margin-top: 20px;
 }
+
 .intro {
   background: #7f94a2;
   color: #fff;
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 22px;
 }
+
 .intro-container {
-  background-color: rgba(0,0,0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
-h4.intro-part-1 {
+
+.intro-part-1 {
   padding: 15px 15px 15px 25px;
   margin: 0 auto;
+  font-size: 21px;
   display: inline-block;
   background: url(../images/icon-drop.png) no-repeat left center;
 }
-.intro h3 {
-  margin-top: 30px;
-  background: url(../images/icon-phone.png) no-repeat center top;
-  padding: 105px 0 0 0;
+.intro-part-2 {
+  font-size: 23px;
+  margin-top: 15px;
 }
+
+.intro h3 {
+  margin-top: 38px;
+  background: url(../images/icon-phone.png) no-repeat center top;
+  font-size: 32px;
+  padding: 110px 0 0 0;
+}
+
 .steps {
   padding: 15px 0 15px;
 }
+
 .steps h3 {
   color: #666;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
-.step-container {
+
+.step-arrows {
   background: url(../images/icon-right.png) no-repeat center center;
-  height: 190px;
+  min-height: 190px;
 }
-.step-container.first {
-  background: none;
-}
+
+
 .step-icon {
   background: #f9f9f9 no-repeat center center;
   height: 200px;
   border-bottom: 4px solid #e1e1e1;
 }
+.step-text {
+  padding-top: 8px;
+}
+
 .step-1 {
   background-image: url(../images/step-1.png);
 }
+
 .step-2 {
   background-image: url(../images/step-2.png);
 }
+
 .step-3 {
   background-image: url(../images/step-3.png);
 }
+
 .info {
   padding: 40px 0;
 }
+.info h3 {
+  margin-bottom: 20px;
+}
+
 .info ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0;
 }
+
 .info li {
   background: url(../images/icon-check.png) no-repeat left 2px;
   padding: 0 30px 25px;
+}
+
+.sign-up {
+  background: #f9f9f9;
+  padding: 30px 35px;
+}
+
+.sign-up h3,
+.sign-up p,
+.subscribe-form {
+
+}
+.opinion-form {
+  padding: 10px 0;
+}
+.opinion-form label {
+  font-weight: normal;
+  padding: 6px 0 6px 10px;
+}
+
+.logo-footer {
+  display: block;
+  width: 139px;
+  height: 38px;
+  background: url('../images/logo-footer.png') no-repeat left top;
 }
