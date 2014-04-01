@@ -1,28 +1,74 @@
 extends layout
 
 block content
-  .row
-    .col-lg-12.col-md-12.well.inner
-      h2.white.center.page-header Reports Electricity, Water, Transport Outages
-      h3.gradientText.center Recieve push notifications to stay updated about when service is interrupted or restored. 
-      h3.gradientText.center See current service interruptions affecting the surrounding areas.
-      div
-      h1.gradientText.center Would you be interested in subscribing to services?    
-      .form-box
-        .form-group.row.center
-          .col-lg-4.col-md-4
-          .col-lg-4.col-md-4.h3.white
-            .col-lg-4.col-md-4
-              input(type="radio", name="selectionCriteria", id="selection_criteria_1", value="NONE") 
-              label(for="selection_criteria_1") Yes
-            .col-lg-4.col-md-4
-              input(type="radio", name="selectionCriteria", id="selection_criteria_1", value="NONE")
-              label(for="selection_criteria_1") No
-          .col-lg-4.col-md-4
-        .form-group.row.center
-          .col-lg-4.col-md-4
-          .col-lg-4.col-md-4
-            input.form-control(type="text", name="email", id="email_id", placeholder="Email Address")
-          .col-lg-4.col-md-4
+  .banner
+    .row
+      .col-lg-6
+        h2 Keep yourself informed
+    .row
+      .col-lg-6
+        h3 about the service outages in your area
+    .row
+      .col-lg-6
+        a.btn.btn-success(href="#") Sign up now
 
-          
+  .intro
+    .row
+      .col-lg-12
+        .intro-container
+          h4.intro-part-1 Powercuts and water outages are never a pleasant experience
+    .row
+      .col-lg-12
+        h3 Wouldn't it be great
+        h4.intro-part-2 if you got to know about these outages in advance!
+
+  .steps
+    .row
+      .col-lg-12
+        h3 Here's how
+    .row
+      .col-lg-3
+        .step-container.first
+          .step-icon.step-1
+          .step-text
+            p The utility
+      .col-lg-1.step-container
+      .col-lg-3
+        .step-container
+          .step-icon.step-2
+          .step-text
+            p
+      .col-lg-1.step-container
+      .col-lg-3
+        .step-container
+          .step-icon.step-3
+          .step-text
+            p
+
+  .info
+    .row
+      .col-lg-6
+        h3 What's in it for us
+        p Well, nothing, except for
+        ul
+          li a
+          li b
+          li c
+      .col-lg-6
+        h3 Tell us what you think
+        p As a consumer of
+        input(id="feedbackYes", type="radio", name="feedback")
+        label(for="feedbackYes") Oh yeah!
+        input(id="feedbackNo", type="radio", name="feedback")
+        label(for="feedbackNo") Nope, it's not for me.
+        input.btn.btn-primary(type="submit", value="Submit")
+
+  .sign-up
+    .row
+      .col-lg-7.col-md-9
+        h3 When can I get my paws on it
+        p We have just
+        p Let us know
+        .subscribe-form
+          input(type="text", name="", placeholder="abc@example.com")
+          input.btn.btn-primary(type="submit", value="Notify me")
