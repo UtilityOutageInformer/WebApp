@@ -54,18 +54,19 @@ block content
       .col-lg-6
         h3 Tell us what you think
         p As a consumer of utility services, would you be interested in subscribing to this service?
-        .opinion-form
-          .row
-            .col-lg-12.col-md-12
-              input(id="feedbackYes", type="radio", name="feedback")
-              label(for="feedbackYes") Oh yeah!
-          .row
-            .col-lg-12.col-md-12
-              input(id="feedbackNo", type="radio", name="feedback")
-              label(for="feedbackNo") Nope, it's not for me.
-        .row
-          .col-lg-12.col-md-12
-            input.btn.btn-primary(type="submit", value="SUBMIT")
+        form(name="submitResponse",method="post",action="/submitResponse")
+            .opinion-form
+              .row
+                .col-lg-12.col-md-12
+                  input(id="feedbackYes", type="radio", name="feedback",value=1)
+                  label(for="feedbackYes") Oh yeah!
+              .row
+                .col-lg-12.col-md-12
+                  input(id="feedbackNo", type="radio", name="feedback",value=0)
+                  label(for="feedbackNo") Nope, it's not for me.
+            .row
+              .col-lg-12.col-md-12
+                input.btn.btn-primary(type="submit", value="SUBMIT")
 
   .sign-up
     .row

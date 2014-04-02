@@ -9,6 +9,10 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
+var pg = require('pg');
+var conString = "postgres://eotxwuioukzxjf:hnzO7xDadgzURejiNG5uRhAJo7@ec2-23-21-243-117.compute-1.amazonaws.com:5432/d9o4enjisput7u";
+var dbClient = new pg.Client(conString);
+
 var app = express();
 
 // all environments
@@ -32,6 +36,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+app.post('/submitResponse', routes.submitResponse(dbClient));
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
