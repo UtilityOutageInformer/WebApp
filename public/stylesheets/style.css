@@ -17,6 +17,20 @@ h3 {
 .btn {
   border-radius: 0;
 }
+.btn-primary {
+  background-color: #0a7dcd;
+  background-image: none;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #2491DA;
+}
+.btn-success {
+  background-color: #0cb11b;
+  background-image: none;
+}
+.btn-success:hover, .btn-success:focus {
+  background-color: #21C221;
+}
 
 header {
   padding: 14px 0;
@@ -150,6 +164,7 @@ header ul a:hover {
 
 .step-text {
   padding-top: 8px;
+  font-size: 13px;
 }
 
 .step-1 {
@@ -175,17 +190,23 @@ header ul a:hover {
 .info ul {
   list-style: none;
   margin: 0;
-  padding: 20px 0 0;
+  padding: 14px 0 0;
 }
 
 .info li {
-  background: url(../images/icon-check.png) no-repeat left 2px;
+  background: url(../images/icon-check.png) no-repeat left 6px;
   padding: 0 30px 25px;
+}
+.info li,
+.info p {
+  line-height: 27px;
 }
 
 .sign-up {
-  background: #f9f9f9;
+  background: #eee;
   padding: 30px 35px;
+  line-height: 27px;
+  margin-bottom: 10px;
 }
 
 .sign-up h3,
@@ -211,10 +232,21 @@ header ul a:hover {
 }
 
 .sign-up-header {
+  margin: 0 0 22px;
+}
+.subscribe-form {
+  padding: 10px 0;
+}
+.sign-up-part-1 {
   margin: 0 0 30px;
 }
-
-.sign-up-part-1 {
-  margin: 0 0 42px;
+.sign-up .form-control {
+  margin-right: 10px;
+  border-radius: 0;
+}
+@media (min-width: 992px) {
+  .step-col-first {
+    margin-left: 4.166665%;
+  }
 }
 
