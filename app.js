@@ -9,6 +9,7 @@ var http = require('http');
 var path = require('path');
 
 var pg = require('pg');
+//var conString = "postgres://postgres@localhost:5432/postgres"
 var HEROKU_POSTGRESQL_BLACK_URL = "postgres://dbqjrdhqspmxvy:wEisXbwpz5uwtVSP46YjbNx2jg@ec2-54-197-241-64.compute-1.amazonaws.com:5432/d93p813pgcb16";
 var conString = HEROKU_POSTGRESQL_BLACK_URL;
 var dbClient = new pg.Client(conString);
@@ -37,7 +38,7 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/users', user.list);
 app.post('/submitResponse', routes.submitResponse(dbClient));
-
+app.post('/notify', routes.notify(dbClient));
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
