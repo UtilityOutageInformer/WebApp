@@ -244,6 +244,16 @@ header ul a:hover {
   margin-right: 10px;
   border-radius: 0;
 }
+.fb-share{
+    background: url(../images/fb.png) no-repeat left 6px;
+    padding: 0 30px 25px;
+}
+.success-message{
+    color: green;
+}
+.error-message{
+    color: darkred;
+}
 @media (min-width: 992px) {
   .step-col-first {
     margin-left: 4.166665%;
