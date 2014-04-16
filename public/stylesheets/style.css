@@ -17,17 +17,21 @@ h3 {
 .btn {
   border-radius: 0;
 }
+
 .btn-primary {
   background-color: #0a7dcd;
   background-image: none;
 }
+
 .btn-primary:hover, .btn-primary:focus {
   background-color: #2491DA;
 }
+
 .btn-success {
   background-color: #0cb11b;
   background-image: none;
 }
+
 .btn-success:hover, .btn-success:focus {
   background-color: #21C221;
 }
@@ -197,6 +201,7 @@ header ul a:hover {
   background: url(../images/icon-check.png) no-repeat left 6px;
   padding: 0 30px 25px;
 }
+
 .info li,
 .info p {
   line-height: 27px;
@@ -234,26 +239,41 @@ header ul a:hover {
 .sign-up-header {
   margin: 0 0 22px;
 }
+
 .subscribe-form {
   padding: 10px 0;
 }
+
 .sign-up-part-1 {
   margin: 0 0 30px;
 }
+
 .sign-up .form-control {
   margin-right: 10px;
   border-radius: 0;
 }
-.fb-share{
-    background: url(../images/fb.png) no-repeat left 6px;
-    padding: 0 30px 25px;
+
+.fb-share {
+  background: url(../images/fb.png) no-repeat left 6px;
+  padding: 0 30px 25px;
 }
-.success-message{
-    color: green;
+
+.success-message {
+  color: green;
 }
-.error-message{
-    color: darkred;
+
+.error-message {
+  color: darkred;
 }
+
+.share-buttons img {
+  width: 35px;
+  padding: 5px;
+  border: 0;
+  box-shadow: 0;
+  display: inline;
+}
+
 @media (min-width: 992px) {
   .step-col-first {
     margin-left: 4.166665%;
